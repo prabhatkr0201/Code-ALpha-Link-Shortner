@@ -46,6 +46,7 @@ header {
 
 .left {
   display: flex;
+  z-index: 100;
 }
 
 .left ul {
@@ -355,6 +356,10 @@ ul :nth-child(1) {
     display: block;
   }
 
+  .left {
+    display:flex;
+  }
+
   .left ul .active {
     background: cyan;
     padding: 0.4rem 1.2rem;
@@ -364,10 +369,14 @@ ul :nth-child(1) {
 
   header {
     display: flex;
-    justify-content: space-between;
+    margin: 0;
+    z-index: 10;
     position: fixed;
-    z-index: 1;
-    width: 90%;
+    top: 0;
+    background-color: white;
+    justify-content: space-between;
+    width: 100%;
+    padding:4px 10px;
   }
 
   .content {
